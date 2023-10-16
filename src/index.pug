@@ -1,0 +1,450 @@
+extends pug/base
+
+append content
+    nav
+        .container
+            h2.logo nokoSiocial
+            .search-bar
+                i.uil.uil-search
+                input(type="search" placeholder="Search for creators, inspirations and projects")
+            .create
+                label.btn.btn-primary(for="#create-post") Create
+                .profile-photo
+                    img(src="images/profile-1.jpg", alt="profile")
+
+    main
+        .container
+            .left
+                a.profile(href="#")
+                    .profile-photo
+                        img(src="images/profile-1.jpg", alt="")
+                    .handle
+                        h4 Diana Ayi
+                        p.text-muted @dayi
+
+                .sidebar
+                    a.menu-item.active(href="#")
+                        span
+                            i.uil.uil-home
+                        h3 Home
+                    a.menu-item(href="#")
+                        span
+                            i.uil.uil-compass
+                        h3 Explore
+                    a.menu-item(href="#", id="notifications")
+                        span
+                            i.uil.uil-bell
+                                small.notification-count 9+
+                        h3 Notifications
+                        //- Notofication popup
+                        .notification-popup
+                            div
+                                .profile-photo
+                                    img(src="images/profile-2.jpg", alt="")
+                                .notification-body
+                                    b Keke Benjamin 
+                                    | accepted your friend request
+                                    small.text-muted 2 Days Ago
+                            div
+                                .profile-photo
+                                    img(src="images/profile-3.jpg", alt="")
+                                .notification-body
+                                    b Jane Doe
+                                    | commented on your post
+                                    small.text-muted 1 Hour Ago
+                            div
+                                .profile-photo
+                                    img(src="images/profile-4.jpg", alt="")
+                                .notification-body
+                                    b Lisa Samuel 
+                                    | commented on your post
+                                    small.text-muted 1 Hour Ago
+                            div
+                                .profile-photo
+                                    img(src="images/profile-5.jpg", alt="")
+                                .notification-body
+                                    b Milana Samuel 
+                                    | commented on your post
+                                    small.text-muted 1 Hour Ago
+                            div
+                                .profile-photo
+                                    img(src="images/profile-6.jpg", alt="")
+                                .notification-body
+                                    b Sveta Samuel 
+                                    | commented on your post
+                                    small.text-muted 1 Hour Ago
+                            div
+                                .profile-photo
+                                    img(src="images/profile-7.jpg", alt="")
+                                .notification-body
+                                    b Mike Stivenson 
+                                    | commented on your post
+                                    small.text-muted 1 Hour Ago
+
+                    a.menu-item(href="#", id="messages-notification")
+                        span
+                            i.uil.uil-envelope-alt
+                                small.notification-count 5
+                        h3 Messages
+                    a.menu-item(href="#")
+                        span
+                            i.uil.uil-bookmark
+                        h3 Bookmarks
+                    a.menu-item(href="#")
+                        span
+                            i.uil.uil-chart-line
+                        h3 Analytics
+                    a.menu-item(href="#" id="theme")
+                        span
+                            i.uil.uil-palette
+                        h3 Theme
+                    a.menu-item(href="#")
+                        span
+                            i.uil.uil-setting
+                        h3 Settings
+
+                label.btn.btn-primary(for="create-post") Create Post
+
+            .middle
+                .stories
+                    .story
+                        .profile-photo
+                            img(src="images/profile-8.jpg", alt="")
+                        p.name Your Story
+                    .story
+                        .profile-photo
+                            img(src="images/profile-9.jpg", alt="")
+                        p.name Lilla James
+                    .story
+                        .profile-photo
+                            img(src="images/profile-10.jpg", alt="")
+                        p.name Win Hale
+                    .story
+                        .profile-photo
+                            img(src="images/profile-11.jpg", alt="")
+                        p.name Daniel Bale
+                    .story
+                        .profile-photo
+                            img(src="images/profile-12.jpg", alt="")
+                        p.name Jane Doe
+                    .story
+                        .profile-photo
+                            img(src="images/profile-13.jpg", alt="")
+                        p.name Tina White
+
+                form.create-post
+                    .profile-photo
+                        img(src="images/profile-1.jpg", alt="")
+                    input(type="text" placeholder="What's on your mind, Diana?" id="create-post")
+                    input.btn.btn-primary(type="submit" value="Post")
+
+                .feeds
+                    .feed
+                        .head
+                            .user
+                                .profile-photo
+                                    img(src="images/profile-13.jpg", alt="")
+                                .info
+                                    h3 Lana Rose
+                                    small Dubai, 15 minutes ago
+                            span.edit
+                                i.uil.uil-ellipsis-h    
+                        .photo
+                            img(src="images/feed-1.jpg", alt="")
+
+                        .action-buttons
+                            .interaction-buttons
+                                span
+                                    i.uil.uil-heart
+                                span
+                                    i.uil.uil-comment-dots
+                                span
+                                    i.uil.uil-share-alt
+                            .bookmark
+                                span
+                                    i.uil.uil-bookmark-full
+                        .liked-by
+                            span
+                                img(src="images/profile-10.jpg", alt="")
+                            span
+                                img(src="images/profile-4.jpg", alt="")
+                            span
+                                img(src="images/profile-15.jpg", alt="")
+                            p Liked By
+                               b Ernest Achiever 
+                               | and 
+                               b 2, 323 others
+
+                        .caption
+                            p
+                                b Lana Rose 
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing. 
+                                span #lifestyle
+                            .comments.text-muted View all 277 comments
+
+                    .feed
+                        .head
+                            .user
+                                .profile-photo
+                                    img(src="images/profile-13.jpg", alt="")
+                                .info
+                                    h3 Lana Rose
+                                    small Dubai, 15 minutes ago
+                            span.edit
+                                i.uil.uil-ellipsis-h    
+                        .photo
+                            img(src="images/feed-2.jpg", alt="")
+
+                        .action-buttons
+                            .interaction-buttons
+                                span
+                                    i.uil.uil-heart
+                                span
+                                    i.uil.uil-comment-dots
+                                span
+                                    i.uil.uil-share-alt
+                            .bookmark
+                                span
+                                    i.uil.uil-bookmark-full
+                        .liked-by
+                            span
+                                img(src="images/profile-10.jpg", alt="")
+                            span
+                                img(src="images/profile-4.jpg", alt="")
+                            span
+                                img(src="images/profile-15.jpg", alt="")
+                            p Liked By
+                               b Ernest Achiever 
+                               | and 
+                               b 2, 323 others
+
+                        .caption
+                            p
+                                b Lana Rose 
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing. 
+                                span #lifestyle
+                            .comments.text-muted View all 277 comments
+
+                    .feed
+                        .head
+                            .user
+                                .profile-photo
+                                    img(src="images/profile-13.jpg", alt="")
+                                .info
+                                    h3 Lana Rose
+                                    small Dubai, 15 minutes ago
+                            span.edit
+                                i.uil.uil-ellipsis-h    
+                        .photo
+                            img(src="images/feed-3.jpg", alt="")
+
+                        .action-buttons
+                            .interaction-buttons
+                                span
+                                    i.uil.uil-heart
+                                span
+                                    i.uil.uil-comment-dots
+                                span
+                                    i.uil.uil-share-alt
+                            .bookmark
+                                span
+                                    i.uil.uil-bookmark-full
+                        .liked-by
+                            span
+                                img(src="images/profile-10.jpg", alt="")
+                            span
+                                img(src="images/profile-4.jpg", alt="")
+                            span
+                                img(src="images/profile-15.jpg", alt="")
+                            p Liked By
+                               b Ernest Achiever 
+                               | and 
+                               b 2, 323 others
+
+                        .caption
+                            p
+                                b Lana Rose 
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing. 
+                                span #lifestyle
+                            .comments.text-muted View all 277 comments
+
+                    .feed
+                        .head
+                            .user
+                                .profile-photo
+                                    img(src="images/profile-13.jpg", alt="")
+                                .info
+                                    h3 Lana Rose
+                                    small Dubai, 15 minutes ago
+                            span.edit
+                                i.uil.uil-ellipsis-h    
+                        .photo
+                            img(src="images/feed-4.jpg", alt="")
+
+                        .action-buttons
+                            .interaction-buttons
+                                span
+                                    i.uil.uil-heart
+                                span
+                                    i.uil.uil-comment-dots
+                                span
+                                    i.uil.uil-share-alt
+                            .bookmark
+                                span
+                                    i.uil.uil-bookmark-full
+                        .liked-by
+                            span
+                                img(src="images/profile-10.jpg", alt="")
+                            span
+                                img(src="images/profile-4.jpg", alt="")
+                            span
+                                img(src="images/profile-15.jpg", alt="")
+                            p Liked By
+                               b Ernest Achiever 
+                               | and 
+                               b 2, 323 others
+
+                        .caption
+                            p
+                                b Lana Rose 
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing. 
+                                span #lifestyle
+                            .comments.text-muted View all 277 comments
+
+                    .feed
+                        .head
+                            .user
+                                .profile-photo
+                                    img(src="images/profile-13.jpg", alt="")
+                                .info
+                                    h3 Lana Rose
+                                    small Dubai, 15 minutes ago
+                            span.edit
+                                i.uil.uil-ellipsis-h    
+                        .photo
+                            img(src="images/feed-5.jpg", alt="")
+
+                        .action-buttons
+                            .interaction-buttons
+                                span
+                                    i.uil.uil-heart
+                                span
+                                    i.uil.uil-comment-dots
+                                span
+                                    i.uil.uil-share-alt
+                            .bookmark
+                                span
+                                    i.uil.uil-bookmark-full
+                        .liked-by
+                            span
+                                img(src="images/profile-10.jpg", alt="")
+                            span
+                                img(src="images/profile-4.jpg", alt="")
+                            span
+                                img(src="images/profile-15.jpg", alt="")
+                            p Liked By
+                               b Ernest Achiever 
+                               | and 
+                               b 2, 323 others
+
+                        .caption
+                            p
+                                b Lana Rose 
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing. 
+                                span #lifestyle
+                            .comments.text-muted View all 277 comments
+
+            .right
+                .messages
+                    .heading
+                        h4 Messages
+                        i.uil.uil-edit
+                    .search-bar
+                        i.uil.uil-search
+                        input(type="search" placeholder="Search messages" id="message-search")
+                    .category
+                        h6.active Primary
+                        h6 General
+                        h6.message-requests Requests(7)
+
+                    .message
+                        .profile-photo
+                            img(src="images/profile-1.jpg", alt="")
+                        .message-body
+                            h5 Edem Quist
+                            p.text-muted Just woke up bro
+                    .message
+                        .profile-photo
+                            img(src="images/profile-3.jpg", alt="")
+                            .active
+                        .message-body
+                            h5 Franca Deila
+                            p.text-muted Recieved
+                    .message
+                        .profile-photo
+                            img(src="images/profile-5.jpg", alt="")
+                        .message-body
+                            h5 Jane Doe
+                            p.text-muted ok
+                    .message
+                        .profile-photo
+                            img(src="images/profile-7.jpg", alt="")
+                            .active
+                        .message-body
+                            h5 Chantel Melisa
+                            p.text-muted Birthday Tomorrow!
+
+                .friend-requests
+                    h4 Requests
+                    .request
+                        .info
+                            .profile-photo
+                                img(src="images/profile-13.jpg", alt="")
+                            div
+                                h5 Hania Bintu
+                                p.text-muted 8 mutual friends
+                        .action
+                            button.btn.btn-primary Accept
+                            button.btn Decline
+
+    .customize-theme
+        .card
+            h2 Customize your view
+            p.text-muted Manage your font size, color and background
+
+            //- Font sizes
+            .font-size
+                h4 Font Size
+                div
+                    h6 Aa
+                    .choose-size
+                        span.font-size-1
+                        span.font-size-2
+                        span.font-size-3.active
+                        span.font-size-4
+                        span.font-size-5
+                    h3 Aa
+
+            //- Primary colors
+            .color
+                h4 Color
+                .choose-color
+                    span.color-1.active
+                    span.color-2
+                    span.color-3
+                    span.color-4
+                    span.color-5
+
+            //- Background colors
+            .background
+                h4 Background
+                .choose-bg
+                    .bg-1.active
+                        span
+                        h5(for="bg-1") Light
+                    .bg-2
+                        span
+                        h5 Dim
+                    .bg-3
+                        span
+                        h5(for="bg-3") Lights Out

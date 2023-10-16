@@ -1,0 +1,133 @@
+/* Button styles */
+.button {
+    --height: 50px;
+    --padding: 14px;
+    --icon-margin: 6px;
+    height: var(--height);
+    min-width: 342px;
+    width: 100%;
+    background: var(--primary);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 0 var(--padding);
+    cursor: pointer;
+    font: var(--font_regular_5);
+}
+
+/* Button Themes */
+.button-default {
+    background: var(--default);
+    color: var(--gray);
+}
+
+.button-light {
+    background: transparent;
+    color: var(--primary);
+}
+
+.button-default-light {
+    background: transparent;
+    color: var(--gray);
+}
+
+/* Button Preloader */
+.button-preloader {
+    font-size: 24px;
+    pointer-events: none;
+    
+    i.ui_preloader {
+        animation: preloader 1s linear infinite;
+    }
+}
+
+@keyframes preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Button Small */
+.button-small {
+    min-width: 200px;
+    width: max-content;
+}
+
+.button-mini {
+    --height: 32px;
+    min-width: 78px;
+    width: max-content;
+    font: var(--font_regular_8);
+}
+
+/* Button with icon */
+.button-icon {
+    position: relative;
+    padding: 0 calc(var(--padding) + 18px + 6px);
+
+    i.ui_arrow-round-up {
+        position: absolute;
+        left: var(--padding);
+        top: 0;
+        line-height: var(--height);
+    }
+}
+
+.button-light.button-icon,
+.button-default-light.button-icon {
+    padding-left: var(--padding);
+}
+
+.button-light.button-icon i.ui_arrow-round-up,
+.button-default-light.button-icon i.ui_arrow-round-up {
+    position: initial;
+    margin-right: var(--icon-margin);
+} 
+
+/* Button with right arrow */
+.button-right {
+    i.ui_arrow-right {
+        font-size: 12px;
+        margin-left: var(--icon-margin);
+        margin-top: 3px;
+    }
+}
+
+/* Button with plus */
+.button-plus {
+    i.ui_plus-circle {
+        margin-right: 4px;
+        font-size: 14px;
+    }
+}
+
+/* Button Badge */
+.button-badge {
+    strong {
+        --size: 16px;
+        min-width: var(--size);
+        padding: 4px;
+        height: var(--size);
+        border-radius: var(--size);
+        background: var(--light);
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: var(--icon-margin);
+        font: var(--font_bold_11);
+    }
+}
+
+.button-badge.button-default,
+.button-badge.button-default-light {
+    strong {
+        background: var(--gray);
+        color: var(--default);
+    }
+}

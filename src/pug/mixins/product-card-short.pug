@@ -1,0 +1,13 @@
+mixin product-card-short(image, mainPrice)
+    .product__card
+        .product__card-top
+            img.product__card-img(src=image)
+            img.product__card-like(src="images/icons/heart-grey.svg")
+        .product__card-content
+            .product__cardprice
+                .product__cardprice-credit!= mainPrice
+            .product__cardtitle Г/Ц Блинчики с мясом вес, Россия
+            .product__rating
+                .rateyo
+        .product__cardbutton
+            .product__btn.btn.btn-outline-sucondary В корзину

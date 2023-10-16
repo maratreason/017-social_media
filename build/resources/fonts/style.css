@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'ui-kit';
+  src:  url('fonts/ui-kit.eot?ssxhxx');
+  src:  url('fonts/ui-kit.eot?ssxhxx#iefix') format('embedded-opentype'),
+    url('fonts/ui-kit.ttf?ssxhxx') format('truetype'),
+    url('fonts/ui-kit.woff?ssxhxx') format('woff'),
+    url('fonts/ui-kit.svg?ssxhxx#ui-kit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ui-kit' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ui_arrow-right:before {
+  content: "\e900";
+}
+.ui_arrow-round-up:before {
+  content: "\e901";
+}
+.ui_plus-circle:before {
+  content: "\e902";
+}
+.ui_preloader:before {
+  content: "\e903";
+}

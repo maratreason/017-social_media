@@ -1,0 +1,110 @@
+@mixin button($class: 'btn-primary', $size: 'default', $type: 'button') {
+    @if ($size == 'default') {
+        padding: 8px;
+        width: 256px;
+        height: 40px;
+    }
+
+    @if ($class == 'btn-success') {
+        background: $color-secondary-light;
+        border: 1px solid $color-secondary-light;
+        color: $color-secondary;
+
+        &:hover {
+            border-color: $color-secondary;
+            background: $color-secondary;
+            color: $color-white;
+        }
+    }
+
+    @if ($class == 'btn-success.is--active') {
+        background: $color-secondary;
+        border: 1px solid $color-secondary;
+        color: $color-white;
+    } 
+    
+    @if ($class == 'btn-primary') {
+        border: 1px solid #70C05B;
+        font-size: 16px;
+        line-height: 150%;
+        border-radius: 4px;
+        text-align: center;
+        color: #70C05B;
+        cursor: pointer;
+        transition: .3s all;
+
+        &:hover {
+            border-color: $color-primary;
+            background: $color-primary;
+            color: $color-white;
+        }
+    }
+
+    @if ($class == 'btn-secondary') {
+        border: 1px solid $color-primary-light;
+        background: $color-primary-light;
+        font-size: 16px;
+        line-height: 150%;
+        border-radius: 4px;
+        text-align: center;
+        color: $color-primary;
+        cursor: pointer;
+        transition: .3s all;
+
+        &:hover {
+            border-color: $color-primary;
+            background: $color-primary;
+            color: $color-white;
+        }
+    }
+
+    @if ($class == 'btn-secondary-active') {
+        border: 1px solid $color-primary;
+        background: $color-primary;
+        font-size: 16px;
+        line-height: 150%;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s all;
+
+        &:hover {
+            border-color: $color-primary;
+            background: $color-primary;
+            color: $color-white;
+        }
+    }
+
+    @if ($class == 'btn-light') {
+        border: 1px solid $color-lightest;
+        background: $color-lightest;
+        font-size: 16px;
+        line-height: 150%;
+        border-radius: 4px;
+        text-align: center;
+        color: $color-secondary-text;
+        cursor: pointer;
+        transition: .3s all;
+
+        &:hover {
+            border-color: $color-lightest;
+            background: $color-lightest;
+            color: $color-secondary-text;
+        }
+    }
+}
+
+@mixin checked-btn() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    min-width: 118px;
+    height: 32px;
+    background: $color-secondary;
+    color: $color-white;
+    border-radius: 4px;
+    cursor: pointer;
+}

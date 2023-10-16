@@ -1,0 +1,7 @@
+@mixin product-card($width, $minHeight) {
+    width: $width + 'px';
+    min-height: $minHeight + 'px';
+    background: $color-white;
+    padding: 10px;
+    border-radius: 5px;
+}

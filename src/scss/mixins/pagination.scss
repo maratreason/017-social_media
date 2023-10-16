@@ -1,0 +1,29 @@
+.pagination {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        padding: 8px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #606060;
+        font-family: 'Rubik-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        &:hover {
+            color: #FF6633;
+        }
+    }
+
+    &__item + &__item {
+        margin-left: 24px;
+    }
+}

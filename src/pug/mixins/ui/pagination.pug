@@ -1,0 +1,5 @@
+mixin pagination(...args)
+    ul.pagination__list
+        each item in args
+            li.pagination__item
+                a.pagination__link(href="#")= item
